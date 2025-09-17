@@ -1,0 +1,6 @@
+vendor/
+dbdata/
+.env
+.idea/
+.vscode/
+.DS_Store

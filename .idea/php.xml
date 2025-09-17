@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/wits-app/vendor/bin/phpcbf" tool_path="$PROJECT_DIR$/wits-app/vendor/bin/phpcs" />
+    </phpcs_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/wits-app/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/slim/psr7" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/php-di/php-di" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/php-di/phpdoc-reader" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpspec/prophecy-phpunit" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpstan/extension-installer" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/jangregor/phpstan-prophecy" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/wits-app/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <PhpStanConfiguration tool_path="$PROJECT_DIR$/wits-app/vendor/bin/phpstan" />
+    </PhpStan_settings>
+  </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/wits-app/phpunit.xml" custom_loader_path="$PROJECT_DIR$/wits-app/vendor/autoload.php" use_configuration_file="true" />
+    </phpunit_settings>
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>

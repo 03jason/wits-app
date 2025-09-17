@@ -1,0 +1,35 @@
+services:
+    app:
+        build: .
+        container_name: wits-app
+        ports:
+            - "8080:80"
+        volumes:
+            - ./:/var/www/html
+        working_dir: /var/www/html
+        environment:
+            - DB_DRIVER=mysql
+            - DB_HOST=db
+            - DB_PORT=3306
+            - DB_NAME=wits
+            - DB_USER=wits
+            - DB_PASS=secret
+
+    db:
+        image: mysql:8.0
+        container_name: wits-db
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=wits
+            - MYSQL_USER=wits
+            - MYSQL_PASSWORD=secret
+
+        # ports:
+        #    - "3306:3306"
+
+        volumes:
+            - dbdata:/var/lib/mysql
+            - ./db/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+
+volumes:
+    dbdata:
