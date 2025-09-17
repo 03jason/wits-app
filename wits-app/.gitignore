@@ -1,6 +1,43 @@
+# --- PHP / Composer ---
 vendor/
-dbdata/
-.env
-.idea/
+composer.lock
+
+# --- Node / React (si tu ajoutes un front plus tard) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Docker ---
+/dbdata/
+/docker/mysql/
+/docker/dbdata/
+/docker-entrypoint-initdb.d/*.log
+
+# --- Logs ---
+*.log
+*.err
+*.out
+storage/logs/
+var/logs/
+
+# --- Cache ---
+.cache/
+tmp/
+temp/
+*.swp
+*.swo
+
+# --- IDE / éditeurs ---
 .vscode/
+.idea/
+*.iml
+
+# --- Système ---
 .DS_Store
+Thumbs.db
+
+# --- Tests / Coverage ---
+coverage/
+.phpunit.result.cache

@@ -1,42 +1,49 @@
-# Slim Framework 4 Skeleton Application
+# WITS - Mini Inventory Manager
 
-[![Coverage Status](https://coveralls.io/repos/github/slimphp/Slim-Skeleton/badge.svg?branch=master)](https://coveralls.io/github/slimphp/Slim-Skeleton?branch=master)
+Gestionnaire de stock simple (produits + mouvements), basé sur **PHP (Slim Framework)**, **MySQL** et **Docker**.
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 4 application. This application uses the latest Slim 4 with Slim PSR-7 implementation and PHP-DI container implementation. It also uses the Monolog logger.
+## # Stack utilisée
+- **Backend** : PHP 8 + Slim 4 (API REST)
+- **Base de données** : MySQL 8 (Docker)
+- **Environnement** : Docker Compose
+- **Tests** : PHPUnit
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+## # Structure
 
-## Install the Application
 
-Run this command from the directory in which you want to install your new Slim Framework application. You will require PHP 7.4 or newer.
 
-```bash
-composer create-project slim/slim-skeleton [my-app-name]
-```
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writable.
-
-To run the application in development, you can run these commands 
+##  # Installation & Lancement
 
 ```bash
-cd [my-app-name]
-composer start
+# 1. Cloner le dépôt
+git clone https://github.com/<ton-user>/wits-app.git
+cd wits-app
+
+# 2. Lancer les services Docker
+docker compose up -d --build
+
+# 3. Installer les dépendances PHP
+docker compose exec app composer install
+
+# 4. Vérifier que l’application répond
+curl http://localhost:8080/api/products
+
+# 5. Lancer les tests unitaires
+docker compose exec app ./vendor/bin/phpunit
 ```
 
-Or you can use `docker-compose` to run the app with `docker`, so you can run these commands:
-```bash
-cd [my-app-name]
-docker-compose up -d
-```
-After that, open `http://localhost:8080` in your browser.
+# # [Commandes utiles]
+### - Voir les logs en live
+docker compose logs -f app
 
-Run this command in the application directory to run the test suite
+docker compose logs -f db
 
-```bash
-composer test
-```
+### - Relancer proprement
+docker compose down -v
 
-That's it! Now go build something cool.
+docker compose up -d --build
+
+### - Vérifier les conteneurs
+docker compose ps
