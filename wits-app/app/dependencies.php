@@ -9,8 +9,12 @@ use Monolog\Logger;
 use Monolog\Processor\UidProcessor;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
+use App\Domain\Repository\ProductRepositoryInterface;
+use App\Infrastructure\Repository\PdoProductRepository;
 
 use App\Infrastructure\Db\ConnectionFactory;
+
+// ne pas mettre => use PDO;
 
 return function (ContainerBuilder $containerBuilder) {
     $containerBuilder->addDefinitions([
@@ -35,4 +39,19 @@ return function (ContainerBuilder $containerBuilder) {
             return ConnectionFactory::makeFromEnv();
         },
     ]);
+
+
+    return function (\DI\ContainerBuilder $containerBuilder) {
+        $containerBuilder->addDefinitions([
+            PDO::class => function () {
+                return \App\Infrastructure\Db\ConnectionFactory::makeFromEnv();
+            },
+
+            ProductRepositoryInterface::class => function (\Psr\Container\ContainerInterface $c) {
+                return new PdoProductRepository($c->get(PDO::class));
+            },
+        ]);
+    };
+
+
 };

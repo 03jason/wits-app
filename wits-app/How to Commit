@@ -1,0 +1,14 @@
+# 1. Vérifier que tu es bien à la racine du projet
+cd C:\wamp64\www\WITS_mini_inventory_manager\wits-app
+
+# 2. Vérifier l’état (tu devrais voir README.md et .gitignore modifiés ou ajoutés)
+git status
+
+# 3. Ajouter les fichiers au commit (remplacer par les bon fichiers)
+git add README.md .gitignore
+
+# 4. Commit avec un message clair
+git commit -m "docs: update README and add .gitignore"
+
+# 5. Pousser sur GitHub
+git push origin main

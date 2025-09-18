@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS products (
     product_category    VARCHAR(100)      NULL,            -- <— ajoutée car utilisée par l’API et les seeds
     product_description TEXT              NULL,
     product_location    VARCHAR(120)      NULL,
+    product_available TINYINT(1)        NOT NULL DEFAULT 1,
     created_at          TIMESTAMP         NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at          TIMESTAMP         NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     INDEX idx_products_name  (product_name),

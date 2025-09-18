@@ -47,3 +47,7 @@ docker compose up -d --build
 
 ### - Vérifier les conteneurs
 docker compose ps
+
+
+
+cd C:\wamp64\www\WITS_mini_inventory_manager\wits-app
